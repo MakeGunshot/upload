@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.5rc1 on win32)" generated="20180720 15:38:25.324">
+<suite id="s1" name="09Robotframework" source="E:\test0719\robotframework\09robotframework.robot">
+<test id="s1-t1" name="百度搜索">
+<kw name="打开百度">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://www.baidu.com</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180720 15:38:25.492" level="INFO">Opening browser 'chrome' to base url 'https://www.baidu.com'.</msg>
+<status status="PASS" starttime="20180720 15:38:25.491" endtime="20180720 15:38:31.335"></status>
+</kw>
+<status status="PASS" starttime="20180720 15:38:25.491" endtime="20180720 15:38:31.335"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20180720 15:38:31.335" endtime="20180720 15:38:32.483"></status>
+</kw>
+<kw name="输入关键字">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:kw</arg>
+<arg>helloworld</arg>
+</arguments>
+<msg timestamp="20180720 15:38:32.484" level="INFO">Typing text 'helloworld' into text field 'id:kw'.</msg>
+<status status="PASS" starttime="20180720 15:38:32.484" endtime="20180720 15:38:32.737"></status>
+</kw>
+<status status="PASS" starttime="20180720 15:38:32.484" endtime="20180720 15:38:32.737"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180720 15:38:32.738" endtime="20180720 15:38:35.836"></status>
+</kw>
+<status status="PASS" starttime="20180720 15:38:25.489" endtime="20180720 15:38:35.836" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20180720 15:38:25.325" endtime="20180720 15:38:35.838"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="09Robotframework">09Robotframework</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

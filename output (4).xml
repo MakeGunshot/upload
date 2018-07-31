@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.5rc1 on win32)" generated="20180725 15:07:52.712">
+<suite id="s1" name="0725" source="E:\test0719\0723验证码\0725.robot">
+<test id="s1-t1" name="[Settings]">
+<kw name="Test_case1 正常登录">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180725 15:07:52.884" level="INFO">Opening browser 'chrome' to base url 'http://118.31.19.120:3000/'.</msg>
+<status status="PASS" starttime="20180725 15:07:52.884" endtime="20180725 15:08:22.041"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div/div/ul/li[6]/a</arg>
+</arguments>
+<msg timestamp="20180725 15:08:22.041" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/div/ul/li[6]/a'.</msg>
+<status status="PASS" starttime="20180725 15:08:22.041" endtime="20180725 15:08:27.410"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="name"]</arg>
+<arg>testuser3</arg>
+</arguments>
+<msg timestamp="20180725 15:08:27.411" level="INFO">Typing text 'testuser3' into text field 'xpath://*[@id="name"]'.</msg>
+<status status="PASS" starttime="20180725 15:08:27.410" endtime="20180725 15:08:27.534"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="pass"]</arg>
+<arg>123456</arg>
+</arguments>
+<msg timestamp="20180725 15:08:27.534" level="INFO">Typing text '123456' into text field 'xpath://*[@id="pass"]'.</msg>
+<status status="PASS" starttime="20180725 15:08:27.534" endtime="20180725 15:08:27.633"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="signin_form"]/div[3]/input</arg>
+</arguments>
+<msg timestamp="20180725 15:08:27.634" level="INFO">Clicking element 'xpath://*[@id="signin_form"]/div[3]/input'.</msg>
+<status status="PASS" starttime="20180725 15:08:27.633" endtime="20180725 15:08:48.055"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath://*[@id="sidebar"]/div[1]/div[2]/div/div/span[1]/a</arg>
+<arg>limit=1</arg>
+</arguments>
+<msg timestamp="20180725 15:08:48.074" level="INFO">Current page contains 1 element(s).</msg>
+<status status="PASS" starttime="20180725 15:08:48.056" endtime="20180725 15:08:48.074"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180725 15:08:48.075" endtime="20180725 15:08:51.124"></status>
+</kw>
+<status status="PASS" starttime="20180725 15:07:52.883" endtime="20180725 15:08:51.124"></status>
+</kw>
+<kw name="Test_case2 密码错误">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180725 15:08:51.125" level="INFO">Opening browser 'chrome' to base url 'http://118.31.19.120:3000/'.</msg>
+<status status="PASS" starttime="20180725 15:08:51.125" endtime="20180725 15:09:20.239"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div/div/ul/li[6]/a</arg>
+</arguments>
+<msg timestamp="20180725 15:09:20.239" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/div/ul/li[6]/a'.</msg>
+<status status="PASS" starttime="20180725 15:09:20.239" endtime="20180725 15:09:20.588"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="name"]</arg>
+<arg>testuser123</arg>
+</arguments>
+<msg timestamp="20180725 15:09:20.589" level="INFO">Typing text 'testuser123' into text field 'xpath://*[@id="name"]'.</msg>
+<status status="PASS" starttime="20180725 15:09:20.588" endtime="20180725 15:09:20.755"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="pass"]</arg>
+<arg>12345</arg>
+</arguments>
+<msg timestamp="20180725 15:09:20.756" level="INFO">Typing text '12345' into text field 'xpath://*[@id="pass"]'.</msg>
+<status status="PASS" starttime="20180725 15:09:20.755" endtime="20180725 15:09:20.864"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="signin_form"]/div[3]/input</arg>
+</arguments>
+<msg timestamp="20180725 15:09:20.865" level="INFO">Clicking element 'xpath://*[@id="signin_form"]/div[3]/input'.</msg>
+<status status="PASS" starttime="20180725 15:09:20.865" endtime="20180725 15:09:21.162"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath://*[@id="content"]/div/div[2]/div/strong</arg>
+<arg>limit=1</arg>
+</arguments>
+<msg timestamp="20180725 15:09:21.188" level="INFO">Current page contains 1 element(s).</msg>
+<status status="PASS" starttime="20180725 15:09:21.162" endtime="20180725 15:09:21.189"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180725 15:09:21.189" endtime="20180725 15:09:24.218"></status>
+</kw>
+<status status="PASS" starttime="20180725 15:08:51.125" endtime="20180725 15:09:24.218"></status>
+</kw>
+<kw name="Test_case3 用户名为空">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180725 15:09:24.219" level="INFO">Opening browser 'chrome' to base url 'http://118.31.19.120:3000/'.</msg>
+<status status="PASS" starttime="20180725 15:09:24.219" endtime="20180725 15:09:56.375"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div/div/ul/li[6]/a</arg>
+</arguments>
+<msg timestamp="20180725 15:09:56.376" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/div/ul/li[6]/a'.</msg>
+<status status="PASS" starttime="20180725 15:09:56.376" endtime="20180725 15:09:57.016"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="name"]</arg>
+<arg>Null</arg>
+</arguments>
+<msg timestamp="20180725 15:09:57.017" level="INFO">Typing text 'Null' into text field 'xpath://*[@id="name"]'.</msg>
+<status status="PASS" starttime="20180725 15:09:57.016" endtime="20180725 15:09:57.153"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="pass"]</arg>
+<arg>123456</arg>
+</arguments>
+<msg timestamp="20180725 15:09:57.153" level="INFO">Typing text '123456' into text field 'xpath://*[@id="pass"]'.</msg>
+<status status="PASS" starttime="20180725 15:09:57.153" endtime="20180725 15:09:57.265"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="signin_form"]/div[3]/input</arg>
+</arguments>
+<msg timestamp="20180725 15:09:57.265" level="INFO">Clicking element 'xpath://*[@id="signin_form"]/div[3]/input'.</msg>
+<status status="PASS" starttime="20180725 15:09:57.265" endtime="20180725 15:09:57.574"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath://*[@id="content"]/div/div[2]/div/strong</arg>
+<arg>limit=1</arg>
+</arguments>
+<msg timestamp="20180725 15:09:57.603" level="INFO">Current page contains 1 element(s).</msg>
+<status status="PASS" starttime="20180725 15:09:57.575" endtime="20180725 15:09:57.604"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180725 15:09:57.604" endtime="20180725 15:10:00.636"></status>
+</kw>
+<status status="PASS" starttime="20180725 15:09:24.218" endtime="20180725 15:10:00.636"></status>
+</kw>
+<kw name="Test_case4 用户名密码都为空">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180725 15:10:00.637" level="INFO">Opening browser 'chrome' to base url 'http://118.31.19.120:3000/'.</msg>
+<status status="PASS" starttime="20180725 15:10:00.637" endtime="20180725 15:10:37.373"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div/div/ul/li[6]/a</arg>
+</arguments>
+<msg timestamp="20180725 15:10:37.374" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/div/ul/li[6]/a'.</msg>
+<status status="PASS" starttime="20180725 15:10:37.373" endtime="20180725 15:10:37.812"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="name"]</arg>
+<arg>Null</arg>
+</arguments>
+<msg timestamp="20180725 15:10:37.813" level="INFO">Typing text 'Null' into text field 'xpath://*[@id="name"]'.</msg>
+<status status="PASS" starttime="20180725 15:10:37.813" endtime="20180725 15:10:37.950"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="pass"]</arg>
+<arg>Null</arg>
+</arguments>
+<msg timestamp="20180725 15:10:37.950" level="INFO">Typing text 'Null' into text field 'xpath://*[@id="pass"]'.</msg>
+<status status="PASS" starttime="20180725 15:10:37.950" endtime="20180725 15:10:38.063"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="signin_form"]/div[3]/input</arg>
+</arguments>
+<msg timestamp="20180725 15:10:38.064" level="INFO">Clicking element 'xpath://*[@id="signin_form"]/div[3]/input'.</msg>
+<status status="PASS" starttime="20180725 15:10:38.063" endtime="20180725 15:10:38.411"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath://*[@id="content"]/div/div[2]/div/strong</arg>
+<arg>limit=1</arg>
+</arguments>
+<msg timestamp="20180725 15:10:38.437" level="INFO">Current page contains 1 element(s).</msg>
+<status status="PASS" starttime="20180725 15:10:38.411" endtime="20180725 15:10:38.437"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180725 15:10:38.438" endtime="20180725 15:10:41.466"></status>
+</kw>
+<status status="PASS" starttime="20180725 15:10:00.636" endtime="20180725 15:10:41.466"></status>
+</kw>
+<status status="PASS" starttime="20180725 15:07:52.882" endtime="20180725 15:10:41.466" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20180725 15:07:52.713" endtime="20180725 15:10:41.468"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="0725">0725</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
